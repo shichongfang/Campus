@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.androidtemplate"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <application
+        android:name="com.example.androidtemplate.manager.ManagerApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.androidtemplate.user.HomeActivity" />
+        <activity
+            android:name="com.example.androidtemplate.user.LoginActivity">
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+        </activity>
+
+        <activity android:name="com.example.androidtemplate.user.RegisterActivity"></activity>
+        <activity android:name="com.example.androidtemplate.user.FindPasswordActivity"></activity>
+        <activity android:name="com.example.androidtemplate.user.PersonalActivity"></activity>
+        <activity android:name="com.example.androidtemplate.user.UpdatePasswordActivity"></activity>
+        <activity android:name="com.example.androidtemplate.user.UpdateUserActivity"></activity>
+
+    		<activity android:name=".user.IpActivity"></activity>
+			<activity android:name=".MainActivity"></activity>
+	<activity android:name=".MessageActivity"></activity>
+		<activity android:name=".MessageAddActivity"></activity>
+		<activity android:name=".MessageDescActivity"></activity>
+	<activity android:name=".NoteActivity"></activity>
+		<activity android:name=".NoteAddActivity"></activity>
+		<activity android:name=".NoteDescActivity"></activity>
+    	<activity android:name=".CategoryActivity"></activity>
+		<activity android:name=".CategoryAddActivity"></activity>
+		<activity android:name=".CategoryDescActivity"></activity>
+		<activity android:name=".NotecActivity"></activity>
+		<activity android:name=".CourseActivity"></activity>
+		<activity android:name=".CourseAddActivity"></activity>
+		<activity android:name=".CourseDescActivity"></activity>
+	<activity android:name=".ClassRoomActivity"></activity>
+		<activity android:name=".ClassRoomAddActivity"></activity>
+		<activity android:name=".ClassRoomDescActivity"></activity>
+	<activity android:name=".KechengActivity"></activity>
+		<activity android:name=".KechengAddActivity"></activity>
+		<activity android:name=".KechengDescActivity"></activity>
+
+	<receiver
+			android:name=".AlarmReceiver"
+			android:process=":remote"
+			/>
+			<activity android:name=".QiandaoActivity"></activity>
+		<activity android:name=".DaoJiShiActivity"></activity>
+	<activity android:name=".MeetingRoomActivity"></activity>
+		<activity android:name=".MeetingRoomAddActivity"></activity>
+		<activity android:name=".MeetingRoomDescActivity"></activity>
+</application>
+
+</manifest>
